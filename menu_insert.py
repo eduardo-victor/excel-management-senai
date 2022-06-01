@@ -1,4 +1,4 @@
-from csv import reader
+import csv
 from tkinter import filedialog
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel, QFileDialog
 from PyQt5 import uic
@@ -10,9 +10,6 @@ class MenuInsert(QMainWindow):
     def __init__(self):
         super(MenuInsert, self).__init__()
 
-        #VARIAVEIS
-        # self.rating_list = []
-        # self.yq_list = []
         # CARREGAR TELA
         self.menu_insert = uic.loadUi("telas/senai-xls-2.ui")
 
@@ -21,14 +18,32 @@ class MenuInsert(QMainWindow):
 
         #BOTÕESSS
         self.menu_insert.load_excel.clicked.connect(self.load_plan)
+        self.menu_insert.insert_button.clicked.connect(self.write_file)
         
     
     def load_plan(self):
-        self.file_path = QFileDialog.getOpenFileName(self, 'CSV File', '')
+        self.file_path = 'excel/editalcovid.xlsx'
         self.menu_insert.load_path.setText(str(self.file_path))
         
+        self.planilha = pd.read_excel(self.file_path)
+        
+        self.name_list = []
+        self.line_list = []
 
-        #NÃO FUNCIONOU ESSA PARTE AQUI
-        with open(self.file_path, 'r') as file:
-            for line_number, content in enumerate(file):
-                print(line_number, content)
+        for row in self.planilha:
+            self.name_list.append(row)
+        
+        for line in range(0, self.planilha.shape[0]):
+            self.line_list.append(line)
+                
+        for i in self.name_list:
+            self.menu_insert.cb_column.addItem(i)
+        
+    def write_file(self):
+        self.coluna = self.menu_insert.cb_column.currentText()
+        self.qtd_linha = self.planilha.shape[0]
+        self.planilha.loc[self.planilha.shape[0], self.coluna] =  self.menu_insert.data_insert.text()
+        
+        self.planilha.to_excel('editalcovid2.xlsx')
+
+
