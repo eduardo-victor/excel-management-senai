@@ -34,102 +34,6 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 0, 0);</string>
   </property>
-  <widget class="QLabel" name="label_path_3">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>320</y>
-     <width>261</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>DIGITE O QUE SERÁ INSERIDO </string>
-   </property>
-  </widget>
-  <widget class="QTableWidget" name="tableWidget">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>150</y>
-     <width>861</width>
-     <height>261</height>
-    </rect>
-   </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>0</width>
-     <height>0</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>951</width>
-     <height>461</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>7</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-color: rgb(255, 255, 255);</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="path_excel">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>200</y>
-     <width>371</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Consolas</family>
-     <pointsize>12</pointsize>
-     <weight>50</weight>
-     <italic>true</italic>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="layoutDirection">
-    <enum>Qt::LeftToRight</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 3px;</string>
-   </property>
-   <property name="text">
-    <string>Ex: &quot;C:/Documents/excel.xlsx&quot;...</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_path">
    <property name="geometry">
     <rect>
@@ -278,82 +182,6 @@ border: none;
     <string>CARREGAR ARQUIVO</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_path_2">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>260</y>
-     <width>301</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string> N° DA LINHA A SER DELETADA:</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_del">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>250</y>
-     <width>91</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Century Gothic</family>
-     <pointsize>9</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-background-color: rgb(255, 255, 255);
-color: black;
-border:none;
-border-radius: 4px
-}
-
-QPushButton:hover{
-background-color: rgb(148,148, 148);
-border: none;
-}</string>
-   </property>
-   <property name="text">
-    <string>DELETAR</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="line_insert">
-   <property name="geometry">
-    <rect>
-     <x>490</x>
-     <y>250</y>
-     <width>91</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background: white;
-border-radius: 5px;</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="lbl_msg">
    <property name="geometry">
     <rect>
@@ -383,10 +211,110 @@ border-radius: 5px;</string>
 border-radius: 3px;</string>
    </property>
    <property name="text">
-    <string>Linha ... deletada com sucesso! Atualize a Planilha.</string>
+    <string>...</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="load_path">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>200</y>
+     <width>371</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 4px;
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>Example: 'C:/User/Documents/file.xlsx...'</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_path_4">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>240</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>SELECIONE A LINHA</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_line">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>260</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botao_deletar">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>260</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+color: black;
+border:none;
+border-radius: 4px
+}
+
+QPushButton:hover{
+background-color: rgb(148,148, 148);
+border: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>DELETAR</string>
    </property>
   </widget>
  </widget>

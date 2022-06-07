@@ -19,6 +19,7 @@ class MenuInsert(QMainWindow):
         #BOTÕESSS
         self.menu_insert.load_excel.clicked.connect(self.load_plan)
         self.menu_insert.insert_button.clicked.connect(self.write_file)
+        self.menu_insert.update_plan.clicked.connect(self.upd_plan)
         
     
     def load_plan(self):
@@ -35,15 +36,17 @@ class MenuInsert(QMainWindow):
         
         for line in range(0, self.planilha.shape[0]):
             self.line_list.append(line)
-                
+
         for i in self.name_list:
             self.menu_insert.cb_column.addItem(i)
-        
+
     def write_file(self):
         self.coluna = self.menu_insert.cb_column.currentText()
-        self.qtd_linha = self.planilha.shape[0]
         self.planilha.loc[self.planilha.shape[0], self.coluna] =  self.menu_insert.data_insert.text()
-        
+        self.menu_insert.data_insert.setText("Inserido com sucesso, atualize a planilha.")
+    
+    def upd_plan(self):    
         self.planilha.to_excel('editalcovid2.xlsx')
+        self.menu_insert.data_insert.setText("")
 
 
