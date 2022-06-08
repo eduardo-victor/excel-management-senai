@@ -1,5 +1,10 @@
+from ast import Str
 import enum
-from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel
+from math import comb
+from msilib.schema import ComboBox
+import re
+from traceback import print_tb
+from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel, QTableWidgetItem
 from PyQt5 import uic
 import sys
 import pandas as pd
@@ -24,22 +29,23 @@ class MenuProcurar(QMainWindow):
         self.planilha = pd.read_excel(self.file_path)
 
         self.line_list = []
+        self.name_list = []
+
+        for row in self.planilha:
+            self.name_list.append(row)
 
         for line in range(0, self.planilha.shape[0]):
             self.line_list.append(line)
         
+        for i in self.name_list:
+            self.menu_buscar.cb_colunas.addItem(i)
+
         for j in self.line_list:
             self.menu_buscar.cb_rows.addItem(str(j))
         
     def imprimir(self):
-        self.combo = self.menu_buscar.cb_rows.currentText()
-        self.menu_buscar.tabela.setColumnCount(self.planilha.shape[1])
-        self.menu_buscar.tabela.setRowCount(1)
+        coluna = self.menu_buscar.cb_colunas.currentText()
+        linha = self.menu_buscar.cb_rows.currentText()
         
-        for row in self.planilha.iterrows():
-            values = row[1]
-            for col_index , value in enumerate(values):
-                if isinstance(value, (float, int)):
-                    value = '{0:0,.0f}'.format(value)
-                tableItem = self.menu_buscar.tabela(str(value))
-                self.menu_buscar.tabela.setItem(row[0], col_index, tableItem)
+        result = self.planilha.loc[int(linha), coluna]
+        self.menu_buscar.lbl_retorno.setText(f"COLUNA: {coluna} | LINHA: {linha} | CONTEÚDO: {result}")

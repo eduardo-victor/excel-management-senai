@@ -118,11 +118,11 @@ border: none;
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -143,11 +143,11 @@ border: none;
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -226,11 +226,11 @@ border: none;
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">

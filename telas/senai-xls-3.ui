@@ -45,11 +45,11 @@
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -103,7 +103,7 @@ border: none;
    <property name="geometry">
     <rect>
      <x>190</x>
-     <y>30</y>
+     <y>20</y>
      <width>551</width>
      <height>91</height>
     </rect>
@@ -193,10 +193,10 @@ border: none;
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
+     <family>MS Shell Dlg 2</family>
      <pointsize>10</pointsize>
      <weight>50</weight>
-     <italic>true</italic>
+     <italic>false</italic>
      <bold>false</bold>
     </font>
    </property>
@@ -246,17 +246,17 @@ border: none;</string>
     <rect>
      <x>300</x>
      <y>240</y>
-     <width>141</width>
+     <width>131</width>
      <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>11</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -317,6 +317,52 @@ border: none;
     <string>DELETAR</string>
    </property>
   </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>861</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>951</width>
+     <height>461</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <zorder>tableWidget</zorder>
+  <zorder>label_path</zorder>
+  <zorder>update_plan</zorder>
+  <zorder>logo_senai</zorder>
+  <zorder>load_excel</zorder>
+  <zorder>lbl_msg</zorder>
+  <zorder>load_path</zorder>
+  <zorder>label_path_4</zorder>
+  <zorder>cb_line</zorder>
+  <zorder>botao_deletar</zorder>
  </widget>
  <resources/>
  <connections/>

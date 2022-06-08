@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>772</width>
-    <height>309</height>
+    <height>311</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>772</width>
-    <height>309</height>
+    <height>311</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>772</width>
-    <height>309</height>
+    <height>311</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -31,6 +31,9 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 0, 0);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextOnly</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="logo_senai">
@@ -61,10 +64,10 @@
    <widget class="QLabel" name="my_name">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>0</y>
-      <width>451</width>
-      <height>21</height>
+      <x>0</x>
+      <y>271</y>
+      <width>771</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -80,8 +83,8 @@
    <widget class="QPushButton" name="botao_delete">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>210</y>
+      <x>600</x>
+      <y>200</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -111,14 +114,14 @@ border: none;
 }</string>
     </property>
     <property name="text">
-     <string>DELETAR DADOS</string>
+     <string>DELETAR DADOS (D)</string>
     </property>
    </widget>
    <widget class="QPushButton" name="botao_insert">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>210</y>
+      <x>30</x>
+      <y>200</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -148,14 +151,14 @@ border: none;
 }</string>
     </property>
     <property name="text">
-     <string>INSERIR DADOS</string>
+     <string>INSERIR DADOS (C)</string>
     </property>
    </widget>
    <widget class="QPushButton" name="botao_search">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>210</y>
+      <x>220</x>
+      <y>200</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -163,9 +166,9 @@ border: none;
     <property name="font">
      <font>
       <family>Century Gothic</family>
-      <pointsize>10</pointsize>
+      <pointsize>9</pointsize>
       <weight>50</weight>
-      <italic>true</italic>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
@@ -185,14 +188,14 @@ border: none;
 }</string>
     </property>
     <property name="text">
-     <string>PROCURAR DADOS</string>
+     <string>PROCURAR DADOS (R)</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>160</y>
+      <y>150</y>
       <width>371</width>
       <height>21</height>
      </rect>
@@ -217,7 +220,7 @@ border: none;
     <property name="geometry">
      <rect>
       <x>410</x>
-      <y>210</y>
+      <y>200</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -225,9 +228,9 @@ border: none;
     <property name="font">
      <font>
       <family>Century Gothic</family>
-      <pointsize>10</pointsize>
+      <pointsize>9</pointsize>
       <weight>50</weight>
-      <italic>true</italic>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
@@ -247,7 +250,7 @@ border: none;
 }</string>
     </property>
     <property name="text">
-     <string>ATUALIZAR DADOS</string>
+     <string>ATUALIZAR DADOS (U)</string>
     </property>
    </widget>
   </widget>

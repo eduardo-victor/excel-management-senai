@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>939</width>
-    <height>476</height>
+    <height>472</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -120,11 +120,11 @@ border: none;</string>
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -145,11 +145,11 @@ border: none;</string>
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -215,17 +215,17 @@ border: none;</string>
     <rect>
      <x>260</x>
      <y>310</y>
-     <width>261</width>
+     <width>211</width>
      <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -333,19 +333,19 @@ border: none;</string>
   <widget class="QLabel" name="label_path_4">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>570</x>
      <y>240</y>
-     <width>181</width>
+     <width>131</width>
      <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Consolas</family>
-     <pointsize>11</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
